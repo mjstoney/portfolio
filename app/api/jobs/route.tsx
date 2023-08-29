@@ -27,11 +27,7 @@ export async function GET(request: Request) {
     connectionLimit: 10,
     queueLimit: 0
   });
-/*    host: "jobs1.cm8rrs7r5asx.us-west-1.rds.amazonaws.com",
-    host: process.env.host
-    user: "admin",
-    password: "Ionian145!",
-    database: "jobsdb",*/
+
   try {
     const rows = await pool.query<IJobRow[]>('SELECT * FROM job');
     return NextResponse.json({ data: rows }, { status: 200 });

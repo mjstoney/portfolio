@@ -22,7 +22,7 @@ export const JobCard = ({ job }: IJobsProps) => {
           <p className="ml-10 text-sm">
             {job.companyName} - {job.companyLocation} - {job.salary}
           </p>
-          <p className="ml-10 text-sm">{job.datePosted.slice(0, 10)}</p>
+          <p className="ml-10 text-sm">{job.datePosted.toString().slice(0, 10)}</p>
         </Link>
       </div>
       <div className="px-4 py-2 mb-8 border-black rounded-b-2xl border-2 text-black bg-white">
