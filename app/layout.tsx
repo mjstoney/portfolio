@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-gray-700 min-h-screen flex flex-col justify-between items-center">
+        <div className="bg-gray-200 min-h-screen flex flex-col justify-between items-center">
           <header className="">
             <Navbar />
           </header>
