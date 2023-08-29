@@ -21,7 +21,7 @@ export interface IJobsProps {
 
 
 
-export default async function Jobs (props: IJobsProps) {
+export default async function Jobs () {
   const result = await fetch("http://localhost:3000/api/jobs", {cache: 'no-store'})
   const jobs = await result.json()
 
