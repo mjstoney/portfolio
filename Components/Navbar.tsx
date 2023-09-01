@@ -12,15 +12,15 @@ export default function Navbar(props: INavbarProps) {
   const pathName = usePathname();
   console.log(pathName);
   return (
-    <div className="shadow-md border-green-600 border-2 w-screen">
-      <ul className="flex flex-row no-underline list-none justify-center items-center py-6 border-b-2 border-black bg-gray-200">
+    <div className="shadow-md w-screen">
+      <ul className="flex flex-row no-underline list-none justify-center items-center py-3 border-b-2 border-gray-500 bg-pal-darkblue">
         <li className="mx-5">
           <Link href="/">
             <span
               className={
                 pathName === "/"
-                  ? "text-black font-bold text-xl"
-                  : "text-gray-500"
+                ? "text-pal-lightaccent font-bold text-lg border-l-2 border-b-2 border-pal-darkaccent px-3 py-1"
+                : "text-pal-darkaccent"
               }
             >
               Home
@@ -32,8 +32,8 @@ export default function Navbar(props: INavbarProps) {
             <span
               className={
                 pathName === "/projects"
-                  ? "text-black font-bold text-xl"
-                  : "text-gray-500"
+                ? "text-pal-lightaccent font-bold text-lg border-l-2 border-b-2 border-pal-darkaccent px-3 py-1"
+                : "text-pal-darkaccent"
               }
             >
               Projects
@@ -45,8 +45,8 @@ export default function Navbar(props: INavbarProps) {
             <span
               className={
                 pathName === "/jobs"
-                  ? "text-black font-bold text-xl"
-                  : "text-gray-500"
+                ? "text-pal-lightaccent font-bold text-lg border-l-2 border-b-2 border-pal-darkaccent px-3 py-1"
+                : "text-pal-darkaccent"
               }
             >
               Jobs
@@ -58,8 +58,8 @@ export default function Navbar(props: INavbarProps) {
             <span
               className={
                 pathName === "/about"
-                  ? "text-black font-bold text-xl"
-                  : "text-gray-500"
+                ? "text-pal-lightaccent font-bold text-lg border-l-2 border-b-2 border-pal-darkaccent px-3 py-1"
+                : "text-pal-darkaccent"
               }
             >
               About
@@ -71,8 +71,8 @@ export default function Navbar(props: INavbarProps) {
             <span
               className={
                 pathName === "/contact"
-                  ? "text-black font-bold text-xl"
-                  : "text-gray-500"
+                ? "text-pal-lightaccent font-bold text-lg border-l-2 border-b-2 border-pal-darkaccent px-3 py-1"
+                : "text-pal-darkaccent"
               }
             >
               Contact
